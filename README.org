@@ -1,0 +1,97 @@
+#+TITLE: Cookiecutter CI CWI
+
+A Cookiecutter template for starting your Python projects at CI CWI.
+
+- GitHub repository: TODO
+- Documentation: TODO
+- License: BSD
+
+* Features
+
+- Documentation with Sphinx (TODO)
+- Versioning with bumpversion (TODO)
+- Conda packaging (TODO)
+
+* Quickstart
+Install the latest Cookiecutter if you haven't installed it yet (this requires
+Cookiecutter 1.4.0 or higher)::
+
+#+BEGIN_SRC bash
+pip install -U cookiecutter
+#+END_SRC
+
+
+Generate a Python package project::
+
+#+BEGIN_SRC bash
+cookiecutter https://github.com/cicwi/cookiecutter-cicwi.git
+#+END_SRC
+
+
+Then:
+1. Answer the questions that cookiecutter asks
+2.
+3. Install the dev requirements into a virtualenv. (~pip install -r requirements_dev.txt~)
+4. Update README
+5. Write software
+6. Keep changelog
+7. Update documentation
+8. Commit code
+9. Create release with bumpversion
+10. Push to github
+11. Create release on GitHub
+12. Create GitHub pages documentation
+
+* Make commands
+
+The project comes with a default Makefile. The Makefile has a
+reasonable number of built-in commands.
+
+** Development requirements
+Download and install development requirements into your current conda
+environment with
+#+BEGIN_SRC bash
+make install_dev
+#+END_SRC
+
+*** TODO this installs
+
+** Install requirements
+Download and install your project requirements into your current conda
+environment with
+#+BEGIN_SRC bash
+make install
+#+END_SRC
+
+*** TODO this installs
+
+** Update the documentation.
+Update your documentation with
+#+BEGIN_SRC bash
+make docs
+#+END_SRC
+** Code formatting
+Automatically reformat the code of your project to a common format
+with
+#+BEGIN_SRC bash
+make style
+#+END_SRC
+** Build conda package
+The command
+#+BEGIN_SRC bash
+make conda_package
+#+END_SRC
+builds a conda package, which you can share on https://anaconda.org/.
+* Authors and contributors
+- Allard Hendriksen
+- Jan-Willem Buurlage
+
+* How to contribute
+Contributions are always welcome. Please submit pull requests against
+the ~develop~ branch.
+
+If you have any issues, questions, or remarks, then please open an
+issue on GitHub.
+
+* License
+This project is licensed under the BSD License - see the =LICENSE= file for details
