@@ -1,0 +1,40 @@
+{# raw is for ignoring templating with cookiecutter, leaving it for use with conda-build #}
+{% raw -%}
+{% set data = load_setup_py_data() %}
+{%- endraw %}
+
+package:
+    name: {{ cookiecutter.project_slug }}
+    {# raw is for ignoring templating with cookiecutter, leaving it for use with conda-build #}
+    {% raw -%}
+    version: {{ data['version'] }}
+    {%- endraw %}
+
+source:
+    path: ../
+
+build:
+    number: '0'
+
+requirements:
+    build:
+        - python
+        - setuptools
+
+    run:
+        - python
+        {% raw -%}
+        # dependencies are defined in setup.py
+        {% for dep in data['install_requires'] %}
+        - {{ dep.lower() }}
+        {% endfor %}
+        {%- endraw %}
+
+about:
+    home: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
+    license_file: LICENSE.md
+    summary: "{{ cookiecutter.project_short_description }}"
+
+extra:
+    maintainers:
+        - {{ cookiecutter.full_name }}

@@ -90,3 +90,6 @@ install: clean ## install the package to the active Python's site-packages
 install_dev:
 	# https://stackoverflow.com/a/28842733
 	pip install -e .[dev]
+
+conda_package: install_dev
+	conda build conda/
