@@ -8,10 +8,6 @@
 * Documentation: [https://{{ cookiecutter.github_username }}.github.io/{{ cookiecutter.project_slug }}]
 {% endif %}
 
-## Features
-
-- TODO
-
 ## Getting Started
 
 It takes a few steps to setup {{ cookiecutter.project_name }} on your
@@ -23,19 +19,10 @@ Python 3.
 
 Simply install with:
 ```
-conda create -n <your-environment> python=3.6
-conda install -c cicwi -c astra-toolbox/label/dev {{ cookiecutter.project_slug }}
+conda install -c cicwi {{ cookiecutter.project_slug }}
 ```
 
 ### Installing from source
-
-To install {{ cookiecutter.project_name }} you will need the latest
-version of the ASTRA toobox (preferably development version). It can
-be installed via command line with Anaconda:
-
-```
-conda install -c astra-toolbox/label/dev astra-toolbox
-```
 
 To install {{ cookiecutter.project_name }}, simply clone this GitHub
 project. Go to the cloned directory and run PIP installer:
@@ -43,14 +30,6 @@ project. Go to the cloned directory and run PIP installer:
 git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug}}.git
 cd {{ cookiecutter.project_slug }}
 pip install -e .
-```
-
-### Short code samples
-The following code snippets demonstrate the features of {{ cookiecutter.project_name }}.
-
-```
-import {{ cookiecutter.project_slug }}
-print('TODO')
 ```
 
 ### Running the examples
@@ -66,12 +45,10 @@ See also the list of [contributors](https://github.com/{{ cookiecutter.github_us
 
 ## How to contribute
 
-Contributions are always welcome. Please submit pull requests against the `develop` branch.
+Contributions are always welcome. Please submit pull requests against the `master` branch.
 
 If you have any issues, questions, or remarks, then please open an issue on GitHub.
 
 ## License
 
 This project is licensed under the {{ cookiecutter.open_source_license }} - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Acknowledgments
