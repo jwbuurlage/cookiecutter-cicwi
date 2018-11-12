@@ -17,7 +17,7 @@ package for optimal usability. The following has already been completed:
     - Documentation has been generated using `make docs`, committed,
         and pushed to GitHub.
 	- GitHub pages have been setup in the project
-      (Settings)[/settings] with "master branch /docs folder".
+      [Settings](/settings) with "master branch /docs folder".
 - [ ] An initial release
 	- In `CHANGELOG.md`, a release date has been added to v0.1.0 (change the YYYY-MM-DD).
 	- The release has been marked a release on GitHub.
