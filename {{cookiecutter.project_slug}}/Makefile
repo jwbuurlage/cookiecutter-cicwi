@@ -94,5 +94,6 @@ install_dev:
 	# https://stackoverflow.com/a/28842733
 	pip install -e .[dev]
 
-conda_package: install_dev
+conda_package:
+	conda install conda-build -y
 	conda build conda/
