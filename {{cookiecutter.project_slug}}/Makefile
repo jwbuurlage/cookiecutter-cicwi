@@ -73,7 +73,10 @@ coverage: ## check code coverage quickly with the default Python
 	coverage html
 	$(BROWSER) htmlcov/index.html
 
-docs: install_dev## generate Sphinx HTML documentation, including API docs
+docs/.nojekyll:
+	touch docs/.nojekyll
+
+docs: docs/.nojekyll install_dev ## generate Sphinx HTML documentation, including API docs
 	rm -f doc_sources/{{ cookiecutter.project_slug }}.rst
 	rm -f doc_sources/modules.rst
 	sphinx-apidoc -o doc_sources/ {{ cookiecutter.project_slug }}
@@ -91,5 +94,6 @@ install_dev:
 	# https://stackoverflow.com/a/28842733
 	pip install -e .[dev]
 
-conda_package: install_dev
+conda_package:
+	conda install conda-build -y
 	conda build conda/
