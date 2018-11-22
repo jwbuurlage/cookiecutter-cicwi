@@ -74,6 +74,7 @@ coverage: ## check code coverage quickly with the default Python
 	$(BROWSER) htmlcov/index.html
 
 docs/.nojekyll:
+	mkdir -p docs
 	touch docs/.nojekyll
 
 docs: docs/.nojekyll install_dev ## generate Sphinx HTML documentation, including API docs
