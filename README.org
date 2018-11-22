@@ -2,6 +2,12 @@
 
 A Cookiecutter template for starting your Python projects at CI CWI.
 
+This template lets you easily set up a Python package for your own projects.
+It automatically creates a directory tree with sensible locations for your
+code, documentation and tests, and directly makes a number of useful tools
+available to more conveniently install, document and eventually publish your
+project.
+
 - GitHub repository: TODO
 - Documentation: TODO
 - License: BSD
