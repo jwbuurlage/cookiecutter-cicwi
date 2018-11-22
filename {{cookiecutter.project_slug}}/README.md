@@ -3,6 +3,9 @@
 
 {{ cookiecutter.project_short_description }}
 
+This paragraph should contain a high-level description of the package, with a
+brief overview of its features and limitations.
+
 {% if is_open_source %}
 * Free software: {{ cookiecutter.open_source_license }}
 * Documentation: [https://{{ cookiecutter.github_username }}.github.io/{{ cookiecutter.project_slug }}]
@@ -14,6 +17,7 @@ The author of this package is in the process of setting up this
 package for optimal usability. The following has already been completed:
 
 - [ ] Documentation
+    - A package description has been written in the README
     - Documentation has been generated using `make docs`, committed,
         and pushed to GitHub.
 	- GitHub pages have been setup in the project settings
