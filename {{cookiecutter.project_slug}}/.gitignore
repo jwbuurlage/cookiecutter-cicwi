@@ -103,3 +103,6 @@ ENV/
 
 # Emacs:
 *~
+
+# VIM:
+.*.sw[op]
