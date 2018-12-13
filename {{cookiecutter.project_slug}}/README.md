@@ -25,7 +25,7 @@ package for optimal usability. The following has already been completed:
 - [ ] An initial release
 	- In `CHANGELOG.md`, a release date has been added to v0.1.0 (change the YYYY-MM-DD).
 	- The release has been marked a release on GitHub.
-	- For more info, see the [Software Release Guide](https://cicwi.github.io/software-guidelines/software-release-guide).
+	- For more info, see the [Software Release Guide](https://cicwi.github.io/software-guides/software-release-guide).
 - [ ] A conda package
 	- Required packages have been added to `setup.py`, for instance,
 	  ```
