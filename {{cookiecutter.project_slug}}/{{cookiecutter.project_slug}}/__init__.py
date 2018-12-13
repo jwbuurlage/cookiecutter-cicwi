@@ -8,3 +8,6 @@ import os.path
 version_filename = os.path.join(os.path.dirname(__file__), 'VERSION')
 with open(version_filename) as version_file:
     __version__ = version_file.read().strip()
+
+# Import all definitions from main module.
+from .{{ cookiecutter.project_slug }} import *
